@@ -380,4 +380,14 @@ class Router implements IRouter {
 			$application->registerRoutes($this, $routes);
 		}
 	}
+
+	/**
+	 * List all routes
+	 *
+	 * @return mixed
+	 * @since 10.0.3
+	 */
+	public function getAllRoutes() {
+		return $this->collections;
+	}
 }
